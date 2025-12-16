@@ -5,7 +5,7 @@ async function register() {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      name: document.getElementById("username").value, // changed from username → name
+      name: document.getElementById("username").value, 
       email: document.getElementById("email").value,
       password: document.getElementById("password").value
     })

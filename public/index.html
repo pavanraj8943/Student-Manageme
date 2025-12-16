@@ -8,12 +8,21 @@
 </head>
 <body>
   <main class="container">
-    <h1>Student Management</h1>
+    <header class="page-header">
+      <div>
+        <h1>Student <span class="accent">Management</span></h1>
+        <p class="lead">Capture details and marks without leaving this workspace.</p>
+      </div>
+      <button type="button" id="logout-btn" class="ghost-btn">Log out</button>
+    </header>
 
-    <!-- Form to add / edit student -->
-    <section id="form-section">
-      <div class="form-header-row">
-        <h2 id="form-title">Add Student</h2>
+    <section id="form-section" class="card">
+      <div class="card-header">
+        <div>
+          <p class="eyebrow">Student form</p>
+          <h2 id="form-title">Add Student</h2>
+          <p class="muted">Fill in the details and expand to record marks.</p>
+        </div>
         <div class="accordion-header collapsed" id="marks-accordion">
           <span>Marks</span>
           <span class="accordion-icon">▼</span>
@@ -56,9 +65,13 @@
     </section>
 
     <!-- Student list -->
-    <section class="students-section">
-      <div class="section-header">
-        <h2>All Students</h2>
+    <section class="students-section card">
+      <div class="card-header">
+        <div>
+          <p class="eyebrow">Records</p>
+          <h2>All Students</h2>
+          <p class="muted">Review entries and manage updates in one place.</p>
+        </div>
         <div class="section-decoration"></div>
       </div>
       <div class="table-container">
@@ -83,6 +96,6 @@
     </section>
   </main>
 
-  <script src="main.js" type="module"></script>
+  <script src="/main.js" type="module"></script>
 </body>
 </html>

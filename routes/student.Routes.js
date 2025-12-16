@@ -6,8 +6,8 @@ import {
   createStudent,
   updateStudent,
   deleteStudent
-} from '../controllers/student.Controller.js';
-import { verifyToken } from '../middleware/auth.Middleware.js';
+} from '../controllers/studentController.js';
+import { verifyToken } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 

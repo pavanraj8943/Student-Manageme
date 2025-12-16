@@ -20,12 +20,19 @@ const s3Input = document.getElementById('subject3');
 // Accordion
 const marksAccordion = document.getElementById('marks-accordion');
 const marksContent = document.getElementById('marks-content');
+const logoutBtn = document.getElementById('logout-btn');
 
 // Check login
 const token = localStorage.getItem("token");
 if (!token) {
   alert('Please login first');
   window.location.href = '/login.html';
+}
+
+if (logoutBtn) {
+  logoutBtn.addEventListener('click', () => {
+    window.location.href = '/login.html';
+  });
 }
 
 // Fetch students
