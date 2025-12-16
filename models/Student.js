@@ -1,13 +1,12 @@
-// models/Student.js//add cheyunthinte structure psranj kodukan
 
 import mongoose from 'mongoose';
 
 const { Schema, model } = mongoose;
 
 const MarksSchema = new Schema({
-  subject1: { type: Number, required: true, default: 0 },
-  subject2: { type: Number, required: true, default: 0 },
-  subject3: { type: Number, required: true, default: 0 }
+  subject1: { type: Number, required: true, },
+  subject2: { type: Number, required: true, },
+  subject3: { type: Number, required: true, }
 }, { _id: false });
 
 const StudentSchema = new Schema({

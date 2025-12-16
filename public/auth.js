@@ -1,5 +1,3 @@
-// auth.js
-
 async function register() {
   const imageInput = document.getElementById("profileImage");
   const file = imageInput?.files?.[0];
@@ -7,6 +5,12 @@ async function register() {
   let imageBase64 = "";
 
   if (file) {
+    const maxSizeInBytes = 1000 * 1024 * 1024; 
+    if (file.size > maxSizeInBytes) {
+      alert("Image size exceeds 100MB limit. Please upload a smaller image.");
+      return;
+    }
+
     try {
       imageBase64 = await fileToBase64(file);
     } catch (err) {

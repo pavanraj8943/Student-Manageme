@@ -15,12 +15,11 @@ const __dirname = path.dirname(__filename);
 connectDB();
 
 const app = express();
-
-app.use(express.json());
+app.use(express.json({ limit: '1500mb' }));
 
 
 app.get('/',(req,res)=>{
-  res.redirect('/login');
+  res.sendFile(path.join(__dirname, 'public', 'landing.html'));
 })
 
 app.get('/', (req, res) => {
