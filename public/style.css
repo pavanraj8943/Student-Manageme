@@ -400,6 +400,14 @@ button:active {
   font-size: 14px;
 }
 
+/* Make the Name column wider so full names are visible */
+#students-table th:nth-child(1),
+#students-table td:nth-child(1) {
+  min-width: 100px;
+  max-width: 200px;
+  white-space: nowrap;
+}
+
 #students-table th {
   background: #f1f5f9;
   font-weight: 600;
