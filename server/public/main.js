@@ -9,7 +9,10 @@ const saveBtn = document.getElementById('save-btn');
 const cancelBtn = document.getElementById('cancel-btn');
 const avatarImg = document.getElementById('user-avatar');
 const userNameEl = document.getElementById('user-name');
-const DEFAULT_AVATAR = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect width="64" height="64" fill="%23e0f2f1"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="28" fill="%230f766e" font-family="Arial"></text></svg>`;
+const DEFAULT_AVATAR = `data:image/svg+xml;utf8,<svg 
+xmlns="http://www.w3.org/2000/svg" width="64" height="64"><rect width="64" height="64" 
+fill="%23e0f2f1"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" 
+font-size="28" fill="%230f766e" font-family="Arial"></text></svg>`;
 
 // Inputs
 const idInput = document.getElementById('student-id');
